@@ -1,0 +1,66 @@
+.container {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 24px 48px rgba(29, 30, 55, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 26px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.goodTitle {
+  color: #02b526;
+}
+
+.neutralTitle {
+  color: #ff9900;
+}
+
+.badTitle {
+  color: #ee3142;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(29, 30, 55, 0.7);
+  margin-bottom: 8px;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(29, 30, 55, 0.1);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background:#3179ff;
+  border-radius: inherit;
+  transition: width 0.4s ease;
+}
